@@ -1,21 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
-    "build": {
-      "outputs": [".next/**"]
-    },
     "codegen": {
-      "outputs": [
-        "./gql/**"
-      ]
+      "outputs": ["./gql/**"]
     },
     "lint": {},
+    "build": {
+      "outputs": [".next/**"],
+      "dependsOn": ["codegen"]
+    },
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": [
-        "codegen"
-      ]
+      "dependsOn": ["codegen"]
     }
   }
 }
