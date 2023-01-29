@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**"]
+    },
+    "codegen": {
+      "outputs": [
+        "./gql/**"
+      ]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": [
+        "codegen"
+      ]
+    }
+  }
+}
