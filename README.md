@@ -1,28 +1,17 @@
-# Turborepo non-monorepo starter
+# Star Wars React Server Components
 
-This is an official starter Turborepo.
+A demo of GraphQL Fragment masking and react server components.
 
-## What's inside?
+## Turbo Repo
 
 This Turborepo uses a single, non-monorepo project (in this case, a single Next.js application). Since [Turborepo 1.6](https://turbo.build/blog/turbo-1-6-0#any-codebase-can-use-turborepo), you can use Turborepo for non-monorepo projects as well as monorepos.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx degit vercel/turbo/examples/non-monorepo non-monorepo
-cd non-monorepo
-pnpm install
-git init . && git add . && git commit -m "Init"
-```
 
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-pnpm turbo build
+yarn turbo build
 ```
 
 ### Develop
@@ -30,7 +19,7 @@ pnpm turbo build
 To develop all apps and packages, run the following command:
 
 ```
-pnpm turbo dev
+yarn turbo dev
 ```
 
 ## Useful Links
