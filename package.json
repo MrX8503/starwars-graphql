@@ -1,5 +1,5 @@
 {
-  "name": "yelp",
+  "name": "starwars-graphql",
   "version": "0.1.0",
   "private": true,
   "scripts": {
